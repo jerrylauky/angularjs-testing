@@ -16,6 +16,9 @@ As our app size grows, a lot of things can go wrong when we try to spend a lot o
   * Developers are not blocked from development when test automation runs on a light-weight test framework (instead of Selenium, requires a lot of setup time and CPU) 
 * Decrease chances of releasing critical bugs to production.
 * Decrease number of duplicate JIRAs
+  
+  
+**Note**: Most changes were made in **./grunt** directory
 
 ## Configuration
 
