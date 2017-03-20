@@ -18,7 +18,7 @@ As our app size grows, a lot of things can go wrong when we try to spend a lot o
 * Decrease number of duplicate JIRAs
   
   
-**Note**: Most changes were made in **./grunt** directory
+**Note**: Most changes were made in **./tests** directory
 
 ## Configuration
 
