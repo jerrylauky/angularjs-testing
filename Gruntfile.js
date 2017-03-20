@@ -125,6 +125,17 @@ module.exports = function (grunt) {
     // server
     grunt.registerTask('server:dev:run', 'Run Dev Server', ['connect:devserver', 'watch:app']);
 
+    // test
+    grunt.registerTask('test', 'Run all test cases', ['connect:testserver', 'karma:unit', 'karma:midway', 'protractor:e2e']);
+    grunt.registerTask('test:unit', 'Run all unit test cases', ['connect:testserver', 'karma:unit']);
+    grunt.registerTask('test:midway', 'Run all midway test cases', ['connect:testserver', 'karma:midway']);
+    grunt.registerTask('test:e2e', 'Run all e2e test cases', ['connect:testserver', 'protractor:e2e']);
+
+    // protractor e2e doesn't provide a way to re-run on file change
+    grunt.registerTask('test:auto', 'Continuously run all test cases', ['connect:testserver', 'karma:unit_auto', 'karma:midway_auto']);
+    grunt.registerTask('test:unit:auto', 'Continuously run all unit test cases', ['connect:testserver', 'karma:unit_auto']);
+    grunt.registerTask('test:midway:auto', 'Continuously run all midway test cases', ['connect:testserver', 'karma:midway_auto']);
+
     // For dev
     grunt.registerTask('dev', ['cleanup:dev', 'build:dev', 'server:dev:run']);
 
