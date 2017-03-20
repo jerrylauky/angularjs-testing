@@ -1,0 +1,6 @@
+node_modules/
+bower_components/
+scripts/
+*.bak
+*.map
+*.DS_Store
