@@ -1,8 +1,8 @@
 {
-  "name": "angularjs-dynamic-config",
+  "name": "angularjs-testing",
   "description": "",
   "version": "1.0.0",
-  "homepage": "https://github.com/jerrylauky/angularjs-dynamic-config",
+  "homepage": "https://github.com/jerrylauky/angularjs-testing",
   "license": "MIT",
   "private": true,
   "dependencies": {
@@ -15,7 +15,9 @@
     "angular-translate-storage-cookie": "^2.15.1",
     "angular-translate-loader-static-files": "^2.15.1",
     "angular-cache": "^4.6.0",
-    "angular-cookies": "1.5.8"
+    "angular-cookies": "1.5.8",
+    "lodash": "^4.17.4",
+    "angular-mocks": "^1.6.3"
   },
   "resolutions": {
     "angular": "~1.5.8"
